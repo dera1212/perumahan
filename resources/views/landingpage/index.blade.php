@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Perumahan Pengarengan Indah</title>
 
+    <meta name="description" content="Pengarengan indah adalah salah satu perumahan elit baru di kota bekasi dengan desain interior, arsitek modern dan bahan kualitas tinggi.">
+
+    <meta name="keywords" content="perumahan pengarengan indah, pengarengan indah, perumahan kota bekasi, perumahan elit kota bekasi, perumahan baru di bekasi">
+
+    <meta name="author" content="Rizal Ahmad">
+
+    <link rel="canonical" href="https://pangarenganindah.com/"/>
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://pangarenganindah.com/"/>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
@@ -16,6 +27,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/logopengarengan.png') }}">
+    <link rel="shortcut icon" href="{{ asset('img/logopengarengan.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('img/logopengarengan.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('img/logopengarengan.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('img/logopengarengan.png') }}">
 
 
 </head>
