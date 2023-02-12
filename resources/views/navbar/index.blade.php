@@ -26,7 +26,7 @@
             <a class="nav-link" href="#lokasi">Lokasi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Denah</a>
+            <a class="nav-link" href="#denah">Denah</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Alamat</a>

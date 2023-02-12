@@ -67,6 +67,7 @@ body{
 
 .section3{
     width: 100%;
+    height: 80vh;
 }
 
 .lokasi-col1{
@@ -105,26 +106,43 @@ body{
 
 .section4{
     width: 100%;
+    height: 100vh;
+    border: 1px solid rgb(255, 255, 255);
 }
 
-.denah-col1{
+.section4 h3{
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border-radius: 0 50px 0 0;
+    margin-right: 75%;
+    margin-top: 10vh;
+}
+
+.section4 .denah-col1{
+    margin-top: 5vh;
     width: 50%;
-    margin-left: 10%;
+    margin-left: 15%;
     float: left;
 }
 
-.denah-col1 img{
-    width: 100%;
+
+.section4 .denah-col1 img{
+    width: 90%;
 }
 
-.denah-col2{
-    width: 30%;
+.section4 .denah-col2{
+    margin-top: 10vh;
+    width: 20%;
     float: left;
 }
 
-.denah-col2 img{
-    width: 100%;
+.section4 .denah-col2 img{
+    width: 55%;
+    height: 22vh;
     border-radius: 50%;
+    margin-bottom: 20px;
     background-color: greenyellow;
 }
 
@@ -221,6 +239,47 @@ body{
         line-height: 15px;
         color: rgb(255, 255, 255);
     }
+
+    .section4{
+        width: 100%;
+        height: 125vh;
+    }
+    
+    .section4 h3{
+        font-weight: bold;
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        border-radius: 0 50px 0 0;
+        margin-right: 75%;
+        margin-top: 10vh;
+    }
+    
+    .section4 .denah-col1{
+        margin-top: 5vh;
+        width: 50%;
+        margin-left: 15%;
+        float: left;
+    }
+    
+    
+    .section4 .denah-col1 img{
+        width: 90%;
+    }
+    
+    .section4 .denah-col2{
+        margin-top: 5vh;
+        width: 20%;
+        float: left;
+    }
+    
+    .section4 .denah-col2 img{
+        width: 50%;
+        height: 15vh;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        background-color: greenyellow;
+    }
 }
 
 
@@ -289,6 +348,7 @@ body{
 
     .section3{
         width: 100%;
+        height: 100vh;
     }
     
     .lokasi-col1{
@@ -322,5 +382,49 @@ body{
         font-size: 13px;
         line-height: 15px;
         color: rgb(255, 255, 255);
+    }
+
+    .section4{
+        width: 100%;
+        height: 105vh;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    
+    .section4 h3{
+        font-weight: bold;
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        border-radius: 0 50px 0 0;
+        margin-right: 40%;
+        margin-top: 10vh;
+    }
+    
+    .section4 .denah-col1{
+        margin-top: 5vh;
+        width: 80%;
+        margin-left: 10%;
+        float: left;
+    }
+    
+    
+    .section4 .denah-col1 img{
+        width: 100%;
+    }
+    
+    .section4 .denah-col2{
+        margin-top: 5vh;
+        width: 90%;
+        margin-left: 5%;
+        float: left;
+    }
+    
+    .section4 .denah-col2 img{
+        width: 20%;
+        height: 9vh;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        margin-left: 3%;
+        background-color: greenyellow;
     }
 }

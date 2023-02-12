@@ -64,8 +64,10 @@
         </div>
     </div>
 
-    <div class="section4">
+    <div class="section4" id="denah">
+        <h3>Denah</h3>
         <div class="denah-col1">
+            
             <img src="{{ asset('img/pengarengan3.jpg') }}" alt="">
         </div>
         <div class="denah-col2">
