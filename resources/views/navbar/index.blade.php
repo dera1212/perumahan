@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-light navbar-custom" data-bs-theme="light">
+<nav class="navbar navbar-expand-lg bg-dark navbar-custom bg-opacity-75" data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand ms-3" href="#">
             <img src="{{ asset('img/logopengarengan.png') }}" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">

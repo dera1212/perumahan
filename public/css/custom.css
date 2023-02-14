@@ -7,424 +7,909 @@ body{
     position: fixed;
 }
 
-.banner{
+.section1{
     width: 100%;
-    height: 100vh;
+    height: 140vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/banner1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
-.banner .banner-col1{
-    width: 40%;
-    float: left;
-}
-
-.banner .banner-col1 img{
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 25vh;
-}
-
-
-.banner .banner-col2{
-    width: 60%;
-    float: left;
-}
-
-.banner .banner-col2 img{
+.section1 .container1{
     width: 100%;
+    height: 140vh;
+    background-color: rgba(0, 0, 0, 0.539);
+}
+
+.section1 .container1 .container1-col1{
+    width: 60%;
+    height: 130vh;
+    margin-left: 5%;
+    float: left;
     margin-top: 10vh;
 }
 
-.beranda1{
-    width: 100%;
-    height: 100vh;
-    padding: 60px 30px;
-    background-color: rgba(0, 128, 0, 0.059);
+.section1 .container1 .container1-col1 h1, h2, h3, p{
+    font-family: 'Yeseva One', cursive;
 }
 
-.beranda1 h1{
+.section1 .container1 .container1-col1 h1{
+    font-size: 80px;
+    line-height: 80px;
+    margin-top: 10vh;
+    color: white;
+}
+
+.section1 .container1 .container1-col1 h3{
     font-size: 35px;
-    text-align: center;
-    color: rgb(255, 43, 43);
-    font-weight: bold;
-    text-shadow: 1px 1px 3px black;
+    line-height: 40px;
+    margin-top: 5vh;
+    color: rgb(255, 255, 255);
+    padding: 15px 15px;
+    margin-right: 50px;
+    background-color: rgb(254, 93, 24);
+    border-radius: 0 100px 0 0;
 }
 
-.beranda1 h3 {
+.section1 .container1 .container1-col1 p{
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 2vh;
+    color: white;
+}
+
+.section1 .container1 .container1-col2{
+    width: 30%;
+    height: 130vh;
+    float: left;
+    margin-top: 20vh;
+}
+
+.section1 .container1 .container1-col2 h3{
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 5vh;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+
+.section1 .container1 .container1-col2 form{
+    margin-top: 1vh;
+}
+
+/* ======================================================================================================== */
+
+.datainput{
+    position:relative;
+    margin:5px 0 20px;
+}
+.datainput p{
+    font-size:12px;
+    background:#eee;
+    display:inline-block;
+    padding:5px 15px;
+    border-radius:.5rem;
+}
+.whatsapp-form textarea{
+    min-height:120px;
+}
+.datainput select{
+    padding:12px 0;
+    color:#555;
+    font-size:14px;
+    width:100%;
+    border:0;
+    border-bottom:1px solid #ddd;
+    outline:none;
+    background:#fff;
+}
+.datainput input, .datainput textarea{
+    font-size:15px;
+    padding:15px 10px;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ddd;
+    border-radius: 10px;
+}
+.datainput input:focus,.datainput textarea:focus{
+    outline:none
+}
+.datainput label{
+    color:#999;
+    font-size:14px;
+    font-weight:400;
+    position:absolute;
+    pointer-events:none;
+    padding: 0 10px;
+    left:0;
+    top:18px;
+    transition:.2s ease all;
+}
+.datainput input:focus~label,.datainput input:valid~label,.datainput textarea:focus~label,.datainput textarea:valid~label{
+    top:-20px;
+    font-size:25px;
+    color:#10ff20;
+}
+#notif-license span{
+    font-size:40px;
+}
+#notif-license{
+    display:none;
+    position:fixed;
+}
+.bar{
+    position:relative;
+    display:block;
+    width:100%;
+}
+.bar:before,.bar:after{
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    transition:.2s ease all;
+}
+.bar:before{
+    left:50%;
+}
+.bar:after{
+    right:50%;
+}
+.datainput input:focus~
+.bar:before,
+.datainput input:focus~
+.bar:after,
+.datainput textarea:focus~
+.bar:before,
+.datainput textarea:focus~
+.bar:after{
+    width:50%;
+}
+.indigox{
+    background:#3f51b5;
+}
+.orangex{
+    background:#ff9800;
+}
+.pinkx{
+    background:#e91e63;
+}
+.bluex{
+    background:#2196F3;
+}
+.purplex{
+    background:#9c27b0;
+}
+.redx{
+    background:#F44336;
+}
+.greenx{
+    background:#4CAF50;
+}
+.highlight{
+    position:absolute;
+    height:50%;
+    width:100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:.5;
+}
+.datainput input:focus~.highlight,.datainput textarea:focus~.highlight{
+    animation: inputHighlighter .3s ease;
+}
+.datainput input:focus~label,.datainput input:valid~label,.datainput textarea:focus~label,.datainput textarea:valid~label{
+    top:-20px;
+    font-size:13px;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+/* Default Whatsapp Form CSS by www.idblanter.com */
+form.whatsapp-form {
+    border-radius: .5rem;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+ .whatsapp-form a.send_form {
+    color: #fff;
+    background: #21a51f;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: .3rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 15px;
+}
+#text-info span {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 700;
+    margin: 15px 0;
+    border-radius: .5rem;
+}
+#text-info span.yes {
+    background: #c6ffc5;
+    color: #0ea904;
+}
+#text-info span.no {
+    background: #ffc5c5;
+    color: #ce0404;
+}
+.whatsapp-form{
+  width:100%;
+  max-width:700px;
+  margin:0 auto;
+  box-sizing:border-box;
+}
+
+/* ============================================================================================================ */
+
+.section2{
+    width: 100%;
+    height: 190vh;
+    background-color: #F6F6F6;
+    transition: 1s;
+}
+
+.section2 h3{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(36, 36, 36);
+}
+
+.section2 p{
     font-size: 20px;
     text-align: center;
-    color: green;
-    font-weight: bold;
-    font-style: italic;
+    color: rgba(36, 36, 36, 0.797);
+    padding: 0 70px;
 }
 
-.beranda1 video{
-    width: 55%;
-    margin-left: 22%;
-    border-radius: 5%;
+.section2 .sec-row{
+    width: 90%;
+    height: 190vh;
+    margin-left: 5%;
+    margin-top: 10vh;
+}
+
+.section2 .sec-row .sec2-col, .sec2-col2, .sec2-col3, .sec2-col4, .sec2-col5, .sec2-col6, .sec2-col7{
+    width: 30%;
+    height: 40vh;
+    margin-left: 3%;
+    border-radius: 100px 0 100px 0;
+    float: left;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 2px 2px 10px black;
 }
 
+.section2 .sec-row .sec2-col{
+    background-image: url('../img/gapura.jpg');
+}
+
+.section2 .sec-row .sec2-col2{
+    background-image: url('../img/rumahan.jpg');
+}
+
+.section2 .sec-row .sec2-col3{
+    background-image: url('../img/ruangtengah.jpg');
+}
+
+.section2 .sec-row .sec2-col4{
+    background-image: url('../img/kamar1.jpg');
+}
+
+.section2 .sec-row .sec2-col5{
+    background-image: url('../img/kamar2.jpg');
+}
+
+.section2 .sec-row .sec2-col6{
+    background-image: url('../img/kamarmandi.jpg');
+}
+
+.section2 .sec-row .sec2-col7{
+    background-image: url('../img/dapur.jpg');
+}
+
+.section2 .sec-row .sec2-col:hover, 
+.section2 .sec-row .sec2-col2:hover,
+.section2 .sec-row .sec2-col3:hover,
+.section2 .sec-row .sec2-col4:hover,
+.section2 .sec-row .sec2-col5:hover,
+.section2 .sec-row .sec2-col6:hover,
+.section2 .sec-row .sec2-col7:hover{
+    background-color: rgba(0, 0, 0, 0.845);
+    transition: 1s ;
+    background-position: center;
+    background-image: none;
+}
+
+.section2 .sec-row .sec2-col, .sec2-col2, .sec2-col3, .sec2-col4, .sec2-col5, .sec2-col6, .sec2-col7 h4, h5{
+    color: rgba(255, 255, 255, 0);
+}
+
+
+.section2 .sec-row .sec2-col:hover h4, 
+.section2 .sec-row .sec2-col2:hover h4,
+.section2 .sec-row .sec2-col3:hover h4,
+.section2 .sec-row .sec2-col4:hover h4,
+.section2 .sec-row .sec2-col5:hover h4,
+.section2 .sec-row .sec2-col6:hover h4,
+.section2 .sec-row .sec2-col7:hover h4
+{
+    font-size: 25px;
+    font-family: 'Yeseva One', cursive;
+    color: goldenrod;
+    margin-top: 13vh;
+    text-align: center;
+    transition: 1s;
+}
+
+.section2 .sec-row .sec2-col:hover h5,
+.section2 .sec-row .sec2-col2:hover h5,
+.section2 .sec-row .sec2-col3:hover h5,
+.section2 .sec-row .sec2-col4:hover h5,
+.section2 .sec-row .sec2-col5:hover h5,
+.section2 .sec-row .sec2-col6:hover h5,
+.section2 .sec-row .sec2-col7:hover h5
+{
+    font-size: 15px;
+    font-family: 'Yeseva One', cursive;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: 1s;
+    padding: 0 10px;
+}
+
+/* ============================================================== */
 
 .section3{
     width: 100%;
-    height: 80vh;
+    height: 120vh;
 }
 
-.lokasi-col1{
-    width: 50%;
+.maps-col1{
+    width: 40%;
+    height: 120vh;
     float: left;
 }
 
-.lokasi-col1 iframe{
+.maps-col1 iframe{
     width: 100%;
-    height: 80vh;
+    height: 120vh;
 }
 
-.lokasi-col2{
-    width: 50%;
-    
+.maps-col2{
+    width: 60%;
+    height: 120vh;
+    background-image: url('../img/kota.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     float: left;
-    padding-top: 3vh;
-    background-color: rgba(50, 50, 50, 0.758);
-    height: 80vh;
 }
 
-.lokasi-col2 h3{
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-.lokasi-col2 ul li, p{
-    margin-left: 30px;
-    margin-right: 20px;
-    font-size: 15px;
-    line-height: 25px;
-    color: rgb(255, 255, 255);
-}
-
-.section4{
+.maps-col2 .konten-col2{
     width: 100%;
-    height: 100vh;
-    border: 1px solid rgb(255, 255, 255);
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.708);
+    padding: 50px 50px;
 }
 
-.section4 h3{
-    font-weight: bold;
-    padding: 10px 20px;
-    background-color: green;
+.konten-col2 h3, p, ul{
+    font-family: 'Yeseva One', cursive;
     color: white;
-    border-radius: 0 50px 0 0;
-    margin-right: 75%;
-    margin-top: 10vh;
+    line-height: 35px;
+    font-weight: 100;
 }
 
-.section4 .denah-col1{
-    margin-top: 5vh;
-    width: 50%;
-    margin-left: 15%;
-    float: left;
+.konten-col2 p, ul{
+    font-size: 15px;
 }
 
+/* ==================================================== */
 
-.section4 .denah-col1 img{
-    width: 90%;
-}
-
-.section4 .denah-col2{
-    margin-top: 10vh;
-    width: 20%;
-    float: left;
-}
-
-.section4 .denah-col2 img{
-    width: 55%;
-    height: 22vh;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    background-color: greenyellow;
-}
 
 @media screen and (max-width: 768px) {
-    .banner{
+    .section1{
         width: 100%;
-        height: 90vh;
+        height: 140vh;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/banner1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
     }
     
-    .banner .banner-col1{
-        width: 40%;
-        float: left;
-    }
-    
-    .banner .banner-col1 img{
-        width: 60%;
-        margin-left: 20%;
-        margin-top: 25vh;
-    }
-    
-    
-    .banner .banner-col2{
-        width: 60%;
-        float: left;
-    }
-    
-    .banner .banner-col2 img{
+    .section1 .container1{
         width: 100%;
+        height: 140vh;
+        background-color: rgba(0, 0, 0, 0.539);
+    }
+    
+    .section1 .container1 .container1-col1{
+        width: 60%;
+        height: 130vh;
+        margin-left: 5%;
+        float: left;
         margin-top: 15vh;
     }
-
-    .beranda1{
-        width: 100%;
-        height: 100vh;
-        padding: 80px 30px;
-        background-color: rgba(0, 128, 0, 0.059);
+    
+    .section1 .container1 .container1-col1 h1, h2, h3, p{
+        font-family: 'Yeseva One', cursive;
     }
     
-    .beranda1 h1{
-        font-size: 25px;
-        text-align: center;
-        color: rgb(255, 43, 43);
-        font-weight: bold;
-        text-shadow: 2px 2px 3px black;
-    }
-    
-    .beranda1 h3 {
-        font-size: 20px;
-        text-align: center;
-        color: green;
-        font-weight: bold;
-        font-style: italic;
-    }
-    
-    .beranda1 video{
-        width: 60%;
-        margin-left: 20%;
-        border-radius: 5%;
-    }
-
-    .section3{
-        width: 100%;
-    }
-    
-    .lokasi-col1{
-        width: 50%;
-        float: left;
-    }
-    
-    .lokasi-col1 iframe{
-        width: 100%;
-        height: 80vh;
-    }
-    
-    .lokasi-col2{
-        width: 50%;
-        float: left;
-        padding-top: 2vh;
-        background-color: rgba(50, 50, 50, 0.758);
-        height: 80vh;
-    }
-    
-    .lokasi-col2 h3{
-        margin-top: 15px;
-        color: rgb(255, 255, 255);
-        margin-left: 20px;
-        font-size: 15px;
-    }
-    
-    .lokasi-col2 ul li, p{
-        margin-left: 20px;
-        margin-right: 15px;
-        font-size: 13px;
-        line-height: 15px;
-        color: rgb(255, 255, 255);
-    }
-
-    .section4{
-        width: 100%;
-        height: 125vh;
-    }
-    
-    .section4 h3{
-        font-weight: bold;
-        padding: 10px 20px;
-        background-color: green;
+    .section1 .container1 .container1-col1 h1{
+        font-size: 55px;
+        line-height: 55px;
+        margin-top: 10vh;
         color: white;
-        border-radius: 0 50px 0 0;
-        margin-right: 75%;
+    }
+    
+    .section1 .container1 .container1-col1 h3{
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 5vh;
+        color: rgb(255, 255, 255);
+        padding: 15px 15px;
+        background-color: rgb(254, 93, 24);
+        border-radius: 0 100px 0 0;
+    }
+    
+    .section1 .container1 .container1-col1 p{
+        font-size: 15px;
+        line-height: 15px;
+        margin-top: 2vh;
+        color: white;
+    }
+    
+    .section1 .container1 .container1-col2{
+        width: 30%;
+        height: 130vh;
+        float: left;
+        margin-top: 20vh;
+    }
+
+    .section1 .container1 .container1-col2 h3{
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 5vh;
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+    }
+    
+    .section1 .container1 .container1-col2 form{
+        margin-top: 1vh;
+    }
+
+    /* ============================================================= */
+
+    .section2{
+        width: 100%;
+        height: 170vh;
+        background-color: #F6F6F6;
+    }
+    
+    .section2 h3{
+        font-size: 35px;
+        text-align: center;
+        color: rgb(36, 36, 36);
+    }
+    
+    .section2 p{
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: rgba(36, 36, 36, 0.797);
+        padding: 0 70px;
+    }
+    
+    .section2 .sec-row{
+        width: 90%;
+        height: 170vh;
+        margin-left: 5%;
         margin-top: 10vh;
     }
     
-    .section4 .denah-col1{
-        margin-top: 5vh;
-        width: 50%;
-        margin-left: 15%;
+    .section2 .sec-row .sec2-col, .sec2-col2, .sec2-col3, .sec2-col4, .sec2-col5, .sec2-col6, .sec2-col7{
+        width: 30%;
+        height: 30vh;
+        margin-left: 3%;
+        border-radius: 70px 0 70px 0;
+        float: left;
+        margin-bottom: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 2px 2px 10px black;
+    }
+    
+    .section2 .sec-row .sec2-col{
+        background-image: url('../img/gapura.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col2{
+        background-image: url('../img/rumahan.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col3{
+        background-image: url('../img/ruangtengah.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col4{
+        background-image: url('../img/kamar1.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col5{
+        background-image: url('../img/kamar2.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col6{
+        background-image: url('../img/kamarmandi.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col7{
+        background-image: url('../img/dapur.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col:hover, 
+    .section2 .sec-row .sec2-col2:hover,
+    .section2 .sec-row .sec2-col3:hover,
+    .section2 .sec-row .sec2-col4:hover,
+    .section2 .sec-row .sec2-col5:hover,
+    .section2 .sec-row .sec2-col6:hover,
+    .section2 .sec-row .sec2-col7:hover{
+        background-color: rgba(0, 0, 0, 0.845);
+        transition: 1s ;
+        background-position: center;
+        background-image: none;
+    }
+    
+    .section2 .sec-row .sec2-col, .sec2-col2, .sec2-col3, .sec2-col4, .sec2-col5, .sec2-col6, .sec2-col7 h4, h5{
+        color: rgba(255, 255, 255, 0);
+    }
+    
+    
+    .section2 .sec-row .sec2-col:hover h4, 
+    .section2 .sec-row .sec2-col2:hover h4,
+    .section2 .sec-row .sec2-col3:hover h4,
+    .section2 .sec-row .sec2-col4:hover h4,
+    .section2 .sec-row .sec2-col5:hover h4,
+    .section2 .sec-row .sec2-col6:hover h4,
+    .section2 .sec-row .sec2-col7:hover h4
+    {
+        font-size: 15px;
+        font-family: 'Yeseva One', cursive;
+        color: goldenrod;
+        margin-top: 8vh;
+        text-align: center;
+        transition: 1s;
+    }
+    
+    .section2 .sec-row .sec2-col:hover h5,
+    .section2 .sec-row .sec2-col2:hover h5,
+    .section2 .sec-row .sec2-col3:hover h5,
+    .section2 .sec-row .sec2-col4:hover h5,
+    .section2 .sec-row .sec2-col5:hover h5,
+    .section2 .sec-row .sec2-col6:hover h5,
+    .section2 .sec-row .sec2-col7:hover h5
+    {
+        font-size: 13px;
+        font-family: 'Yeseva One', cursive;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        transition: 1s;
+        padding: 0 10px;
+    }
+
+    /* ======================================================================================= */
+
+    .section3{
+        width: 100%;
+        height: 120vh;
+    }
+    
+    .maps-col1{
+        width: 40%;
+        height: 120vh;
         float: left;
     }
     
-    
-    .section4 .denah-col1 img{
-        width: 90%;
+    .maps-col1 iframe{
+        width: 100%;
+        height: 120vh;
     }
     
-    .section4 .denah-col2{
-        margin-top: 5vh;
-        width: 20%;
+    .maps-col2{
+        width: 60%;
+        height: 120vh;
+        background-image: url('../img/kota.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
         float: left;
     }
     
-    .section4 .denah-col2 img{
-        width: 50%;
-        height: 15vh;
-        border-radius: 50%;
-        margin-bottom: 20px;
-        background-color: greenyellow;
+    .maps-col2 .konten-col2{
+        width: 100%;
+        height: 120vh;
+        background-color: rgba(0, 0, 0, 0.708);
+        padding: 50px 50px;
     }
+    
+    .konten-col2 h3, p, ul{
+        font-family: 'Yeseva One', cursive;
+        color: white;
+        line-height: 20px;
+        font-size: 20px;
+    }
+    
+    .konten-col2 p, ul{
+        font-size: 13px;
+    }
+    
+    /* ==================================================== */
+    
+    
 }
 
 
 @media screen and (max-width: 428px) {
-    .banner{
+    .section1{
         width: 100%;
-        height: 55vh;
+        height: 150vh;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/banner1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
     }
     
-    .banner .banner-col1{
-        width: 40%;
-        float: left;
-        display: none;
-    }
-    
-    .banner .banner-col1 img{
-        width: 60%;
-        margin-left: 20%;
-        margin-top: 15vh;
-    }
-    
-    
-    .banner .banner-col2{
+    .section1 .container1{
         width: 100%;
-        float: left;
+        height: 150vh;
+        background-color: rgba(0, 0, 0, 0.539);
     }
     
-    .banner .banner-col2 img{
-        width: 100%;
-        margin-top: 15vh;
-    }
-
-    .beranda1{
-        width: 100%;
-        height: 70vh;
-        padding: 80px 30px;
-        background-color: rgba(0, 128, 0, 0.059);
-    }
-    
-    .beranda1 h1{
-        font-size: 25px;
-        text-align: center;
-        color: rgb(255, 43, 43);
-        font-weight: bold;
-        text-shadow: 1px 1px 3px black;
-    }
-    
-    .beranda1 h3 {
-        font-size: 15px;
-        text-align: center;
-        color: green;
-        font-weight: bold;
-        font-style: italic;
-    }
-    
-    .beranda1 video{
+    .section1 .container1 .container1-col1{
         width: 90%;
+        height: 50vh;
         margin-left: 5%;
-        border-radius: 5%;
-    }
-
-    .navbar-custom{
-        width: 100%;
-        position: fixed;
-    }
-
-    .section3{
-        width: 100%;
-        height: 100vh;
-    }
-    
-    .lokasi-col1{
-        width: 100%;
         float: left;
+        margin-top: 15vh;
     }
     
-    .lokasi-col1 iframe{
-        width: 100%;
-        height: 50vh;
+    .section1 .container1 .container1-col1 h1, h2, h3, p{
+        font-family: 'Yeseva One', cursive;
     }
     
-    .lokasi-col2{
-        width: 100%;
-        float: left;
-        padding-top: 3vh;
-        background-color: rgba(50, 50, 50, 0.758);
-        height: 50vh;
-    }
-    
-    .lokasi-col2 h3{
-        margin-top: 18px;
-        color: rgb(255, 255, 255);
-        margin-left: 15px;
-        font-size: 18px;
-    }
-    
-    .lokasi-col2 ul li, p{
-        margin-left: 15px;
-        margin-right: 15px;
-        font-size: 13px;
-        line-height: 15px;
-        color: rgb(255, 255, 255);
-    }
-
-    .section4{
-        width: 100%;
-        height: 105vh;
-        border: 1px solid rgb(255, 255, 255);
-    }
-    
-    .section4 h3{
-        font-weight: bold;
-        padding: 10px 20px;
-        background-color: green;
+    .section1 .container1 .container1-col1 h1{
+        font-size: 45px;
+        line-height: 50px;
+        margin-top: 10vh;
         color: white;
+    }
+    
+    .section1 .container1 .container1-col1 h3{
+        font-size: 17px;
+        line-height: 20px;
+        margin-top: 3vh;
+        color: rgb(255, 255, 255);
+        padding: 15px 15px;
+        background-color: rgb(254, 93, 24);
         border-radius: 0 50px 0 0;
-        margin-right: 40%;
+    }
+    
+    .section1 .container1 .container1-col1 p{
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 2vh;
+        color: white;
+    }
+    
+    .section1 .container1 .container1-col2{
+        width: 100%;
+        height: 85vh;
+        float: left;
+        margin-top: 10vh;
+    }
+
+    .section1 .container1 .container1-col2 h3{
+        font-size: 15px;
+        line-height: 30px;
+        margin-top: 5vh;
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+    }
+    
+    .section1 .container1 .container1-col2 form{
+        margin-top: 1vh;
+    }
+
+    /* ======================================================================== */
+
+    .section2{
+        width: 100%;
+        height: 260vh;
+        background-color: #F6F6F6;
+    }
+    
+    .section2 h3{
+        font-size: 35px;
+        text-align: center;
+        color: rgb(36, 36, 36);
+    }
+    
+    .section2 p{
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: rgba(36, 36, 36, 0.797);
+        padding: 0 50px;
+    }
+    
+    .section2 .sec-row{
+        width: 90%;
+        height: 260vh;
+        margin-left: 5%;
         margin-top: 10vh;
     }
     
-    .section4 .denah-col1{
-        margin-top: 5vh;
-        width: 80%;
-        margin-left: 10%;
-        float: left;
-    }
-    
-    
-    .section4 .denah-col1 img{
-        width: 100%;
-    }
-    
-    .section4 .denah-col2{
-        margin-top: 5vh;
+    .section2 .sec-row .sec2-col, .sec2-col2, .sec2-col3, .sec2-col4, .sec2-col5, .sec2-col6, .sec2-col7{
         width: 90%;
+        height: 25vh;
         margin-left: 5%;
+        border-radius: 70px 0 70px 0;
+        float: left;
+        margin-bottom: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 2px 2px 10px black;
+    }
+    
+    .section2 .sec-row .sec2-col{
+        background-image: url('../img/gapura.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col2{
+        background-image: url('../img/rumahan.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col3{
+        background-image: url('../img/ruangtengah.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col4{
+        background-image: url('../img/kamar1.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col5{
+        background-image: url('../img/kamar2.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col6{
+        background-image: url('../img/kamarmandi.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col7{
+        background-image: url('../img/dapur.jpg');
+    }
+    
+    .section2 .sec-row .sec2-col:hover, 
+    .section2 .sec-row .sec2-col2:hover,
+    .section2 .sec-row .sec2-col3:hover,
+    .section2 .sec-row .sec2-col4:hover,
+    .section2 .sec-row .sec2-col5:hover,
+    .section2 .sec-row .sec2-col6:hover,
+    .section2 .sec-row .sec2-col7:hover{
+        background-color: rgba(0, 0, 0, 0.845);
+        transition: 1s ;
+        background-position: center;
+        background-image: none;
+    }
+    
+    .section2 .sec-row .sec2-col, .sec2-col2, .sec2-col3, .sec2-col4, .sec2-col5, .sec2-col6, .sec2-col7 h4, h5{
+        color: rgba(255, 255, 255, 0);
+    }
+    
+    
+    .section2 .sec-row .sec2-col:hover h4, 
+    .section2 .sec-row .sec2-col2:hover h4,
+    .section2 .sec-row .sec2-col3:hover h4,
+    .section2 .sec-row .sec2-col4:hover h4,
+    .section2 .sec-row .sec2-col5:hover h4,
+    .section2 .sec-row .sec2-col6:hover h4,
+    .section2 .sec-row .sec2-col7:hover h4
+    {
+        font-size: 15px;
+        font-family: 'Yeseva One', cursive;
+        color: goldenrod;
+        margin-top: 8vh;
+        text-align: center;
+        transition: 1s;
+    }
+    
+    .section2 .sec-row .sec2-col:hover h5,
+    .section2 .sec-row .sec2-col2:hover h5,
+    .section2 .sec-row .sec2-col3:hover h5,
+    .section2 .sec-row .sec2-col4:hover h5,
+    .section2 .sec-row .sec2-col5:hover h5,
+    .section2 .sec-row .sec2-col6:hover h5,
+    .section2 .sec-row .sec2-col7:hover h5
+    {
+        font-size: 13px;
+        font-family: 'Yeseva One', cursive;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        transition: 1s;
+        padding: 0 10px;
+    }
+
+    /* ============================================================================= */
+
+    .section3{
+        width: 100%;
+        height: 120vh;
+    }
+    
+    .maps-col1{
+        width: 100%;
+        height: 50vh;
         float: left;
     }
     
-    .section4 .denah-col2 img{
-        width: 20%;
-        height: 9vh;
-        border-radius: 50%;
-        margin-bottom: 20px;
-        margin-left: 3%;
-        background-color: greenyellow;
+    .maps-col1 iframe{
+        width: 100%;
+        height: 50vh;
     }
+    
+    .maps-col2{
+        width: 100%;
+        height: 70vh;
+        background-image: url('../img/kota.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        float: left;
+    }
+    
+    .maps-col2 .konten-col2{
+        width: 100%;
+        height: 70vh;
+        background-color: rgba(0, 0, 0, 0.708);
+        padding: 40px 20px;
+    }
+    
+    .konten-col2 h3, p, ul{
+        font-family: 'Yeseva One', cursive;
+        color: white;
+        line-height: 20px;
+        font-size: 20px;
+    }
+    
+    .konten-col2 p, ul{
+        font-size: 15px;
+    }
+    
+    /* ==================================================== */
+
+    
 }
