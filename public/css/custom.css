@@ -508,6 +508,103 @@ form.whatsapp-form {
         height: 33.3vh;
     }
 
+/* ==================================================== */
+
+    .section6{
+        width: 80%;
+        height: 70vh;
+        margin-left: 10%;
+        border-top: 30px solid green;
+        border-bottom: 10px solid green;
+        border-left: 10px solid green;
+        border-right: 10px solid green;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        border-radius: 10px;
+    }
+
+    .section6 h3{
+        font-family: 'Yeseva One', cursive;
+        width: 250px;
+        font-size: 30px;
+        height: 50px;
+        text-align: center;
+        background-color: greenyellow;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin-left: 10px;
+        margin-top: -60px;
+    }
+
+    .sec6-col{
+        width: 25%;
+        height: 70vh;
+        float: left;
+        padding: 40px 20px;
+    }
+
+    .sec6-col p{
+        font-family: 'Yeseva One', cursive;
+        color: rgba(0, 0, 0, 0.831);
+        font-size: 17px;
+    }
+
+
+/* ==================================================== */
+
+    .section7{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.872);
+        padding: 10vh 10%;
+    }
+
+    .section7 h3{
+        font-family: 'Yeseva One', cursive;
+        color: rgba(255, 255, 255, 0.831);
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .section7 .sec7-col{
+        width: 49%;
+        height: 40vh;
+        float: left;
+        text-align: center;
+        padding: 8vh 70px;
+        border: 1px solid black;
+        margin-right: 1%;
+        box-shadow: 1px 1px 10px wheat;
+    }
+
+    .section7 .sec7-col:hover{
+        background-color: rgb(59, 10, 10);
+        transition: 1s;
+    }
+
+    .sec7-col h4{
+        font-family: 'Yeseva One', cursive;
+        color: rgba(255, 255, 255, 0.831);
+        font-size: 30px;
+        text-align: center;
+    }
+
+/* ==================================================== */
+
+    .footer-custom{
+        width: 100%;
+        height: 15vh;
+        padding: 4vh 20px;
+        background-color: rgba(0, 0, 0, 0.941);
+    }
+
+    .footer-custom p{
+        font-family: 'Yeseva One', cursive;
+        color: wheat;
+        text-align: center;
+        font-size: 15px;
+    }
+
 
 /* ==================================================== */
 
@@ -841,10 +938,107 @@ form.whatsapp-form {
     }
 
 
+    /* ==================================================== */
+
+    .section6{
+        width: 90%;
+        height: 70vh;
+        margin-left: 5%;
+        border-top: 30px solid green;
+        border-bottom: 10px solid green;
+        border-left: 10px solid green;
+        border-right: 10px solid green;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        border-radius: 10px;
+    }
+
+    .section6 h3{
+        font-family: 'Yeseva One', cursive;
+        width: 250px;
+        font-size: 30px;
+        height: 50px;
+        text-align: center;
+        background-color: greenyellow;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin-left: 10px;
+        margin-top: -60px;
+    }
+
+    .sec6-col{
+        width: 25%;
+        height: 70vh;
+        float: left;
+        padding: 40px 10px;
+    }
+
+    .sec6-col p{
+        font-family: 'Yeseva One', cursive;
+        color: rgba(0, 0, 0, 0.831);
+        font-size: 12px;
+    }
+
+
 /* ==================================================== */
 
+.section7{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.872);
+    padding: 10vh 10%;
+}
+
+.section7 h3{
+    font-family: 'Yeseva One', cursive;
+    color: rgba(255, 255, 255, 0.831);
+    font-size: 70px;
+    text-align: center;
+}
+
+.section7 .sec7-col{
+    width: 49%;
+    height: 40vh;
+    float: left;
+    text-align: center;
+    padding: 7vh 50px;
+    border: 1px solid black;
+    margin-right: 1%;
+    box-shadow: 1px 1px 10px wheat;
+}
+
+.section7 .sec7-col:hover{
+    background-color: rgb(59, 10, 10);
+    transition: 1s;
+}
+
+.sec7-col h4{
+    font-family: 'Yeseva One', cursive;
+    color: rgba(255, 255, 255, 0.831);
+    font-size: 20px;
+    text-align: center;
+}
+
+/* ==================================================== */
     
-    
+
+
+    .footer-custom{
+        width: 100%;
+        height: 15vh;
+        padding: 4vh 20px;
+        background-color: rgba(0, 0, 0, 0.941);
+    }
+
+    .footer-custom p{
+        font-family: 'Yeseva One', cursive;
+        color: wheat;
+        text-align: center;
+        font-size: 15px;
+    }
+
+
+/* ==================================================== */
 }
 
 
@@ -1174,8 +1368,105 @@ form.whatsapp-form {
         height: 23.3vh;
     }
 
+        /* ==================================================== */
+
+        .section6{
+            width: 90%;
+            height: 70vh;
+            margin-left: 5%;
+            border-top: 30px solid green;
+            border-bottom: 10px solid green;
+            border-left: 10px solid green;
+            border-right: 10px solid green;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+            border-radius: 10px;
+        }
+    
+        .section6 h3{
+            font-family: 'Yeseva One', cursive;
+            width: 250px;
+            font-size: 30px;
+            height: 50px;
+            text-align: center;
+            background-color: greenyellow;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-left: 10px;
+            margin-top: -60px;
+        }
+    
+        .sec6-col{
+            width: 50%;
+            height: 25vh;
+            float: left;
+            padding: 40px 10px;
+        }
+    
+        .sec6-col p{
+            font-family: 'Yeseva One', cursive;
+            color: rgba(0, 0, 0, 0.831);
+            font-size: 12px;
+        }
+
 
 /* ==================================================== */
 
-    
+    .section7{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.872);
+        padding: 7vh 5%;
+    }
+
+    .section7 h3{
+        font-family: 'Yeseva One', cursive;
+        color: rgba(255, 255, 255, 0.831);
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .section7 .sec7-col{
+        width: 80%;
+        height: 25vh;
+        float: left;
+        text-align: center;
+        padding: 5vh 40px;
+        border: 1px solid black;
+        margin-left: 9%;
+        margin-right: 1%;
+        box-shadow: 1px 1px 10px wheat;
+    }
+
+    .section7 .sec7-col:hover{
+        background-color: rgb(59, 10, 10);
+        transition: 1s;
+    }
+
+    .sec7-col h4{
+        font-family: 'Yeseva One', cursive;
+        color: rgba(255, 255, 255, 0.831);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* ==================================================== */
+
+    .footer-custom{
+        width: 100%;
+        height: 15vh;
+        padding: 4vh 20px;
+        background-color: rgba(0, 0, 0, 0.941);
+    }
+
+    .footer-custom p{
+        font-family: 'Yeseva One', cursive;
+        color: wheat;
+        text-align: center;
+        font-size: 15px;
+    }
+
+
+/* ==================================================== */
+
 }

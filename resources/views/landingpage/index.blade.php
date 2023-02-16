@@ -171,7 +171,7 @@
     </div>
 
 
-    <div class="section5">
+    <div class="section5" id="denah">
 
         <div class="sec5-col1">
 
@@ -191,6 +191,73 @@
             <img src="{{ asset('img/rainboowlake.jpg') }}" alt="">
         </div>
 
+    </div>
+
+    <div class="section6" id="spesifik">
+        <h3>Spesifikasi</h3>
+        <div class="sec6-col">
+            <p>
+            Struktur<br>
+            Pondasi<br>
+            Dinding<br>
+            Lantai<br>
+            Rangkai Atap<br>
+            Plafon<br>
+            Kusen<br>
+            </p>
+        </div>
+        <div class="sec6-col">
+            <p>
+            : Sloff Besi 10mm<br>
+            : Batu Kali<br>
+            : Bata Ringan<br>
+            : Granit 60x60<br>
+            : Baja Ringan<br>
+            : Holo & Gypsum<br>
+            : Alumunium<br>
+            </p>
+        </div>
+        <div class="sec6-col">
+            <p>
+            Pintu Utama<br>
+            Pintu Kamar<br>
+            Sanitasi<br>
+            Finishing<br>
+            Air<br>
+            Genteng Atap<br>
+            Listrik<br>
+            </p>
+        </div>
+        <div class="sec6-col">
+            <p>
+            : Panel Setara Meranti<br>
+            : Panel Finishing Cat<br>
+            : Closed Duduk<br>
+            : Aci, Cat Setara Vinilex<br>
+            : PDAM<br>
+            : Plat Beton<br>
+            : 1300<br>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="section7">
+        <h3>Booking Sekarang Juga!!</h3>
+        <div class="sec7-col">
+            <h4>Hubungi Kontak Di Bawah Ini</h4>
+            <a href=""><button type="button" class="btn btn-primary">Kontak Whatsapp</button></a>
+        </div>
+
+        <div class="sec7-col">
+            <h4>Download Rincian Harga Di Bawah Ini</h4>
+            <a href="{{ asset('download/pricelist.pdf') }}" download="pricelist"><button type="button" class="btn btn-primary">Download Price List</button></a>
+        </div>
+    </div>
+
+
+    <div class="footer-custom">
+        <p>&copy; 2023 Pengarengan Indah. Crafted with by Rizaldev</p>
     </div>
 
 

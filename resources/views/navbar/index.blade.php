@@ -29,7 +29,10 @@
             <a class="nav-link" href="#lokasi">Lokasi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Alamat</a>
+            <a class="nav-link" href="#denah">Denah</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#spesifik">Spesifikasi</a>
           </li>
           
         </ul>
