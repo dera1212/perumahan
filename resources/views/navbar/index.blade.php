@@ -20,13 +20,13 @@
                 Kontak
               </button>
               
-            </div>
+          </div>
 
           <li class="nav-item">
-            <a class="nav-link" href="#lokasi">Lokasi</a>
+            <a class="nav-link" href="#desain">Desain</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#denah">Denah</a>
+            <a class="nav-link" href="#lokasi">Lokasi</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Alamat</a>

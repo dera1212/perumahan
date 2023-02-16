@@ -46,7 +46,7 @@
     @include('navbar.index')
 
 
-    <div class="section1">
+    <div class="section1" id="beranda">
         <div class="container1">
             <div class="container1-col1">
                 <h1>Perumahan Pengarengan Indah</h1>
@@ -55,34 +55,35 @@
             </div>
             <div class="container1-col2">
                 <h3>Isi Data</h3>
-                <form class="whatsapp-form">
 
+                <form class="whatsapp-form" action="#" method="post">
+                    @csrf
                     <div class="datainput">
-                        <input class="validate" id="wa_name" name="name" required="" type="text" value=''/>
+                        <input  id="nama" name="name" required type="text"/>
                         <span class="highlight"></span><span class="bar"></span>
                         <label>Nama Anda</label>
                     </div>
 
                     <div class="datainput">
-                        <input class="validate" id="wa_alamat" name="alamat" required="" type="text" value=''/>
+                        <input  id="alamat" name="alamat" required type="text"/>
                         <span class="highlight"></span><span class="bar"></span>
                         <label>Alamat Lengkap</label>
                     </div>
 
                     <div class="datainput">
-                        <input class="validate" id="wa_number" name="count" required="" type="number" value=''/>
+                        <input  id="usia" name="count" required type="number"/>
                         <span class="highlight"></span><span class="bar"></span>
                         <label>Usia</label>
                     </div>
 
-                    <a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">Kirim Ke Whatsapp</a>
-                    <div id="text-info"></div>
+                    <a class="send_form" id="kirim_ke_wa" type="submit" name="submit" title="Send to Whatsapp" onclick="kirimWa()">Kirim Ke Whatsapp</a>
+                    <div ></div>
                     </form>
             </div>
         </div>
     </div>
 
-    <div class="section2">
+    <div class="section2" id="desain">
         <h3>Estetis</h3>
         <p>Semua desain tekstur bagian luar maupun bagian dalam di buat oleh desainer handal yang mengedepankan pemodelan modern.</p>
         <div class="sec-row">
@@ -126,7 +127,7 @@
     </div>
 
 
-    <div class="section3">
+    <div class="section3" id="lokasi">
 
         <div class="maps-col1">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.35683440878!2d107.0058745!3d-6.1856922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698bd0090e8707%3A0x661d60fb2d4d1945!2sPerumahan%20Pengarengan%20Indah!5e0!3m2!1sid!2sid!4v1676189472382!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -155,7 +156,87 @@
     </div>
 
 
+    <div class="section4">
 
+        <div class="sec4-col1">
+            
+        </div>
+
+        <div class="sec4-col2">
+            <h3>
+                Hanya <br><span>3 Jutaan!!</span> Sudah Bisa Rencanakan Rumah Mewah Anda!
+            </h3>
+        </div>
+
+    </div>
+
+
+    <div class="section5">
+
+        <div class="sec5-col1">
+
+        </div>
+
+        <div class="sec5-col2">
+            <img src="{{ asset('img/bad.png') }}" alt="">
+            <img src="{{ asset('img/shower.png') }}" alt="">
+            <img src="{{ asset('img/sofa.png') }}" alt="">
+            <img src="{{ asset('img/garpusendok.png') }}" alt="">
+            <img src="{{ asset('img/mobil.png') }}" alt="">
+        </div>
+
+        <div class="sec5-col3">
+            <img src="{{ asset('img/kolamrenang.jpg') }}" alt="">
+            <img src="{{ asset('img/tamanbermain.jpg') }}" alt="">
+            <img src="{{ asset('img/rainboowlake.jpg') }}" alt="">
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+    {{-- script js kirim wa --}}
+
+    <script>
+       function kirimWa(){
+        
+        var nama = $('#nama').val();
+        var alamat = $('#alamat').val();
+        var usia = $('#usia').val();
+
+       if(nama != '' && alamat != '' && usia != ''){
+
+      
+            /* Whatsapp Settings */
+            var walink = 'https://api.whatsapp.com/send',
+                phone = '6281313213380',
+                walink2 = 'Halo saya ingin Booking';
+
+            /* Smartphone Support */
+            // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // var walink = 'whatsapp://send';
+            // }
+
+            /* Final Whatsapp URL */
+            var sendWA = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
+                '*Nama* : ' + nama + '%0A' +
+                '*Alamat* : ' + alamat + '%0A' +
+                '*Usia* : ' + usia + '%0A';
+
+            /* Whatsapp Window Open */
+            window.open(sendWA,'_blank');
+       
+        
+            } else{
+                alert("Harap isi")
+            }
+    }
+
+
+
+    </script>
 </body>
 </html>
