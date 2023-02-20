@@ -88,10 +88,7 @@
         <p>Semua desain tekstur bagian luar maupun bagian dalam di buat oleh desainer handal yang mengedepankan pemodelan modern.</p>
         <div class="sec-row">
 
-            <div class="sec2-col">
-                <h4>Gapura</h4>
-                <h5>Desain Gapura Modern Dengan Tekstur Mewah</h5>        
-            </div>
+            
             
             <div class="sec2-col2">
                 <h4>Tampak Depan</h4>
@@ -274,7 +271,7 @@
         var alamat = $('#alamat').val();
         var usia = $('#usia').val();
 
-       if(nama != '' && alamat != '' && usia != ''){
+       if(nama != '' && alamat != '' && usia != '' ){
 
       
             /* Whatsapp Settings */
