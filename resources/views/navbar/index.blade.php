@@ -15,10 +15,10 @@
           </li>
       
 
-          <div class="dropdown">
-              <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="">
+              <a href="https://wa.me/6282295430607" target="_blank"><button class="btn btn-secondary" type="button" data-bs-toggle="" aria-expanded="false">
                 Kontak
-              </button>
+              </button></a>
               
           </div>
 

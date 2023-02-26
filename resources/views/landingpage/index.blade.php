@@ -243,7 +243,7 @@
         <h3>Booking Sekarang Juga!!</h3>
         <div class="sec7-col">
             <h4>Hubungi Kontak Di Bawah Ini</h4>
-            <a href=""><button type="button" class="btn btn-primary">Kontak Whatsapp</button></a>
+            <a href="https://wa.me/6282295430607" target="_blank"><button type="button" class="btn btn-primary">Kontak Whatsapp</button></a>
         </div>
 
         <div class="sec7-col">
@@ -276,7 +276,7 @@
       
             /* Whatsapp Settings */
             var walink = 'https://api.whatsapp.com/send',
-                phone = '6281313213380',
+                phone = '6282295430607',
                 walink2 = 'Halo saya ingin Booking';
 
             /* Smartphone Support */
